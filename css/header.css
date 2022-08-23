@@ -1,5 +1,4 @@
 .dropdown:hover .dropdown-menu {
-    border: none;
     border-radius: 0;
     display: block;
     padding: 0;
@@ -7,7 +6,6 @@
 }
 .dropdown-item {
     color: #030303;
-    font-size: large;
     font-weight: bold;
 }
 
@@ -23,7 +21,6 @@
 .nav-link {
     border-bottom: 4px solid transparent;
     color: #030303;
-    font-size: large;
     font-weight: bold;
 }
 .nav-item-lined {
