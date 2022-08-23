@@ -35,5 +35,37 @@
 
 .video-icon {
     padding-bottom: 2px;
-    filter: contrast(40%)
+    filter: contrast(40%);
+}
+.login-icon {
+    padding-bottom: 2px;
+    filter: contrast(40%);
+}
+
+.navbar-l-button {
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-right: 16px;
+    background-color: white;
+    border: 1px solid;
+    height: 80%;
+    width: 160px;
+    font-weight: bold;
+}
+
+.navbar-pn-button {
+    margin-top: 2px;
+    height: 80%;
+    background-color: #a40000;
+    width: 400px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.navbar-pn-button:hover {
+    box-shadow: inset 400px 0 10px 0 #C21700;
 }
