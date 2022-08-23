@@ -1,0 +1,39 @@
+.dropdown:hover .dropdown-menu {
+    border-radius: 0;
+    display: block;
+    padding: 0;
+    margin-top: 0;
+}
+.dropdown-item {
+    color: #030303;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar {
+    padding-bottom: 0 !important;
+}
+.navbar-brand {
+    padding-left: 18px;
+    padding-bottom: 14px;
+}
+
+.nav-link {
+    border-bottom: 4px solid transparent;
+    color: #030303;
+    font-size: large;
+    font-weight: bold;
+}
+.nav-link:hover {
+    border-bottom: 4px solid #AC0000;
+    color: #030303;
+}
+.link-text {
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+
+.video-icon {
+    padding-bottom: 2px;
+    filter: contrast(40%)
+}
