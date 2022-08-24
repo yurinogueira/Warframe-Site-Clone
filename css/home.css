@@ -1,3 +1,54 @@
 * {
     font-family: "Noto Sans", sans-serif;
 }
+
+.info-links {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.white-button {
+    background-color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid;
+    color: white;
+    font-weight: bold;
+}
+
+.red-button {
+    background-color: #A40000;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    -webkit-transition: ease-out 1s;
+    -moz-transition: ease-out 1s;
+    transition: ease-out 1s;
+}
+.red-button:hover {
+    background-color: #790000;
+    box-shadow: inset 400px 0 0 0 #C21700;
+}
+
+.zariman-image {
+    height: 1280px;
+}
+.warframe-zariman {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    margin-top: -736px;
+    margin-left: 256px;
+    width: 480px;
+}
+
+@media (max-width: 1399px) {
+    .warframe-zariman {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
