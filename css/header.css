@@ -10,12 +10,7 @@
 }
 
 .navbar {
-    padding-bottom: 0 !important;
     border-bottom: 1px solid #bdbdbd;
-}
-.navbar-brand {
-    padding-left: 18px;
-    padding-bottom: 14px;
 }
 
 .nav-link {
@@ -34,24 +29,7 @@
     color: #030303;
 }
 
-.link-text {
-    padding-top: 10px;
-    padding-bottom: 6px;
-}
-
-.video-icon {
-    padding-bottom: 2px;
-    filter: contrast(40%);
-}
-.login-icon {
-    padding-bottom: 2px;
-    filter: contrast(40%);
-}
-
 .navbar-l-button {
-    margin-top: 2px;
-    margin-left: 8px;
-    margin-right: 16px;
     background-color: white;
     border: 1px solid;
     height: 80%;
@@ -60,7 +38,6 @@
 }
 
 .navbar-pn-button {
-    margin-top: 2px;
     height: 80%;
     background-color: #a40000;
     width: 400px;
