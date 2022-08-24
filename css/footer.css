@@ -29,3 +29,24 @@
     filter: invert(1);
 }
 
+.card {
+    border: none;
+}
+.age-rating-container {
+    margin-top: 16px;
+}
+.age-rating-image {
+    margin-left: 16px;
+    width: 64px;
+}
+.age-rating-card {
+    margin: 0 auto;
+    width: 320px;
+    height: 128px;
+}
+.age-rating-card-body {
+    margin-top: 16px;
+}
+.age-info {
+    margin-top: 10px;
+}
