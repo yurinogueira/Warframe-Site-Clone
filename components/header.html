@@ -5,15 +5,18 @@
     <title>Cabeçalho</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <nav class="navbar navbar-expand-xxl fixed-top bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../images/logo-menu.webp"
                alt="Logo do Warframe"
                class="d-inline-block align-text-top">
         </a>
-        <div class="justify-content-end" id="navbarSupportedContent">
-          <ul class="nav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <img alt="Toggle Menu Icon" src="../images/menu-icon.svg">
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
             <li class="nav-item dropdown nav-item-lined">
               <a class="link-text nav-link dropdown-toggle active"
                  href="#"
@@ -115,14 +118,13 @@
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <button class="navbar-l-button">
                 <img class="login-icon" src="../images/login-icon.svg" alt="Entrar">
                 ENTRAR
               </button>
             </li>
-
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <button class="navbar-pn-button">
                 JOGUE GRATUITAMENTE AGORA MESMO
               </button>
