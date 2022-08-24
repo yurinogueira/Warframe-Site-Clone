@@ -41,9 +41,25 @@
     position: relative;
     left: 0;
     z-index: 1;
-    margin-top: -736px;
+    margin-top: -512px;
     margin-left: 256px;
     width: 480px;
+}
+.image-adjust {
+    height: calc(100vh - 128px);
+    width: 100%;
+    object-fit: cover;
+    background-size : cover;
+    background-position: center;
+}
+
+@media (max-width: 576px) {
+    .warframe-zariman {
+        width: 90%;
+    }
+    .small-adjustment {
+        width: 80%;
+    }
 }
 
 @media (max-width: 1399px) {
