@@ -37,3 +37,14 @@
     height: 80%;
     width: 160px;
 }
+
+@media (max-width: 1400px) {
+    .header-red-button {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+    .header-white-button {
+        width: 90%;
+        margin-bottom: 32px;
+    }
+}
