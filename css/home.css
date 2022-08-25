@@ -34,8 +34,12 @@
     box-shadow: inset 400px 0 0 0 #C21700;
 }
 
+.mt--64px {
+    margin-top: -64px;
+}
+
 .zariman-image {
-    height: 832px;
+    height: 896px;
 }
 .warframe-zariman {
     position: relative;
@@ -46,7 +50,7 @@
     width: 480px;
 }
 .image-adjust {
-    height: 832px;
+    height: 896px;
     width: 100%;
     object-fit: cover;
 }
