@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warframe</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <script src="js/utils.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-xl fixed-top bg-white pb-0">
+    <div class="container-fluid">
+      <a class="navbar-brand px-4 pb-1" href="index.html">
+        <img src="images/logo-menu.webp"
+             alt="Logo do Warframe"
+             class="d-inline-block align-text-top mb-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <img alt="Toggle Menu Icon" src="images/menu-icon.svg">
+      </button>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown active nav-item-lined">
+            <a class="pb-2 pt-3 nav-link dropdown-toggle active"
+               href="index.html"
+               id="gameDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Jogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gameDropdown">
+              <li><a class="dropdown-item" href="#">Notícias Recentes</a></li>
+              <li><a class="dropdown-item" href="#">Atualizações de Jogo</a></li>
+              <li><a class="dropdown-item" href="#">Warframes</a></li>
+              <li><a class="dropdown-item" href="#">Baixar o Jogo</a></li>
+              <li><a class="dropdown-item" href="#">Aplicativo Móvel</a></li>
+              <li><a class="dropdown-item" href="#">Suporte</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown nav-item-lined">
+            <a class="pb-2 pt-3 nav-link dropdown-toggle active"
+               href="#"
+               id="shopDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Loja
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+              <li><a class="dropdown-item" href="#">Prime Access</a></li>
+              <li><a class="dropdown-item" href="#">Prime Vault</a></li>
+              <li><a class="dropdown-item" href="#">Pacotes de Suporte</a></li>
+              <li><a class="dropdown-item" href="#">Platinas & Pacotes</a></li>
+              <li><a class="dropdown-item" href="#">Pacote Iniciante</a></li>
+              <li>
+                <a class="dropdown-item"
+                   href="https://store.warframe.com/?utm_source=website"
+                   target="_blank">
+                  Produtos Oficiais
+                  <img class="pb-1" src="images/launch-icon.svg" alt="Vídeos">
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#">Resgatar Código</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown nav-item-lined">
+            <a class="pb-2 pt-3 nav-link dropdown-toggle active"
+               href="#"
+               id="communityDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Comunidade
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+              <li><a class="dropdown-item" href="https://forums.warframe.com/" target="_blank">
+                Fóruns
+                <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+              </a></li>
+              <li><a class="dropdown-item" href="#">Criadores de Conteúdo do Warframe</a></li>
+              <li><a class="dropdown-item" href="#">Programa de Indicação</a></li>
+              <li><a class="dropdown-item" href="#">Voluntários do Warframe</a></li>
+              <li><a class="dropdown-item" href="https://discord.com/invite/playwarframe" target="_blank">
+                Servidor Oficial do Discord
+                <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+              </a></li>
+              <li><a class="dropdown-item" href="https://www.twitch.tv/warframe" target="_blank">
+                Canal do Twitch
+                <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+              </a></li>
+              <li><a class="dropdown-item" href="https://twitter.com/playwarframe" target="_blank">
+                Twitter
+                <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+              </a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown nav-item-lined">
+            <a class="pb-2 pt-3 nav-link dropdown-toggle active"
+               href="#"
+               id="guidesDropdown"
+               role="button"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Guias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="guidesDropdown">
+              <li><a class="dropdown-item" href="https://warframe.fandom.com/wiki/WARFRAME_Wiki/" target="_blank">
+                Página Wiki do Warframe
+                <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+              </a></li>
+              <li><a class="dropdown-item" href="#">História & Facções</a></li>
+              <li><a class="dropdown-item" href="#">Guia de Início Rápido</a></li>
+              <li><a class="dropdown-item" href="#">Guia de Jornadas</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item nav-item-lined">
+            <a class="pb-2 pt-3 nav-link" href="https://www.youtube.com/user/playwarframe" target="_blank">
+              Vídeos
+              <img class="video-icon" src="images/launch-icon.svg" alt="Vídeos">
+            </a>
+          </li>
+
+          <li class="nav-item text-center">
+            <button class="white-button header-white-button mx-3">
+              <img class="pb-1" src="images/login-icon.svg" alt="Entrar">
+              ENTRAR
+            </button>
+          </li>
+          <li class="nav-item text-center">
+            <button class="red-button header-red-button">
+              JOGUE GRATUITAMENTE AGORA MESMO
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+  <hr>
+  <section class="container text-center mt-2">
+    <div class="row">
+      <div class="col">
+        <img src="images/warframe-logo.webp" alt="Warframe Logo">
+      </div>
+    </div>
+    <div class="d-lg-inline-flex d-sm-grid">
+      <div class="p-2">
+        <a href="https://www.warframe.com/pt-br/zendesk" class="link-dark info-links">Suporte</a>
+      </div>
+      <div class="p-2">
+        <a href="https://www.digitalextremes.com/" class="link-dark info-links">Imprensa</a>
+      </div>
+      <div class="p-2">
+        <a href="https://www.warframe.com/pt-br/terms" class="link-dark info-links">Termos de Uso</a>
+      </div>
+      <div class="p-2">
+        <a href="https://www.warframe.com/pt-br/privacy" class="link-dark info-links">Política de Privacidade</a>
+      </div>
+      <div class="p-2">
+        <a href="https://www.warframe.com/pt-br/eula" class="link-dark info-links">Acordo de Licença do Usuário Final (EULA)</a>
+      </div>
+      <div class="p-2">
+        <a href="#" class="link-dark info-links">Configurações de Cookies</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="contacts-container">
+    <section class="container text-center">
+      <a type="button" class="btn btn-circle" href="https://www.facebook.com/PlayWarframe/" target="_blank">
+        <img class="img-fluid" src="images/facebook.svg" alt="Facebook">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://twitter.com/playwarframe" target="_blank">
+        <img class="img-fluid" src="images/twitter.svg" alt="Twitter">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://www.youtube.com/user/playwarframe" target="_blank">
+        <img class="img-fluid" src="images/youtube.svg" alt="Youtube">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://www.instagram.com/playwarframe/" target="_blank">
+        <img class="img-fluid" src="images/instagram.svg" alt="Instagram">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://www.twitch.tv/warframe" target="_blank">
+        <img class="img-fluid" src="images/twitch.svg" alt="Twitch">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://www.reddit.com/r/warframe" target="_blank">
+        <img class="img-fluid" src="images/reddit.svg" alt="Reddit">
+      </a>
+      <a type="button" class="btn btn-circle" href="https://discord.com/invite/playwarframe" target="_blank">
+        <img class="img-fluid" src="images/discord.svg" alt="Discord">
+      </a>
+    </section>
+
+    <section class="container text-center mt-4 mb-4">
+      <div class="card m-auto age-ratting-card border-0">
+        <div class="row g-0 mt-3 mb-3">
+          <div class="col-4">
+            <img src="images/age-ratting.webp" alt="Classificação 18 Anos">
+          </div>
+          <div class="col-8">
+            <ul class="m-2">
+              <li class="float-start">Violência</li>
+              <li class="float-start">Interação de usuários</li>
+              <li class="float-start">Compras on-line</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <p>
+        ©2022 Digital Extremes Ltd. Todos os direitos reservados. Todas as marcas registradas são propriedade de seus respectivos donos.
+      </p>
+      <p>
+        Site Clone feito por Yuri Nogueira Moreira da Silva como projeto da disciplina de Desenvolvimento Web.
+      </p>
+    </section>
+
+    <section class="text-center">
+      <img src="images/steam.webp" class="img-fluid m-1" alt="Steam">
+      <img src="images/epicgames.webp" class="img-fluid m-1" alt="Epic Games">
+      <img src="images/switch.webp" class="img-fluid m-1" alt="Nintendo Switch">
+      <img src="images/playstation.webp" class="img-fluid m-1" alt="Playstation">
+      <img src="images/xbox.webp" class="img-fluid m-1" alt="Xbox">
+    </section>
+  </div>
+</footer>
+</body>
+</html>
