@@ -2,15 +2,12 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-.info-links {
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .white-button {
     background-color: white;
     border: 1px solid;
     font-weight: bold;
+    text-align: center;
+    line-height: 32px;
 }
 
 .transparent-button {
@@ -18,7 +15,13 @@
     border: 1px solid;
     color: white;
     font-weight: bold;
+    text-align: center;
+    line-height: 32px;
 }
+.transparent-button:hover {
+    color: white;
+}
+
 
 .red-button {
     background-color: #A40000;
@@ -28,14 +31,20 @@
     -webkit-transition: ease-out 1s;
     -moz-transition: ease-out 1s;
     transition: ease-out 1s;
+    text-align: center;
+    line-height: 32px;
 }
 .red-button:hover {
     background-color: #790000;
+    color: #FFFFFF;
     box-shadow: inset 400px 0 0 0 #C21700;
 }
 
 .mt--64px {
     margin-top: -64px;
+}
+.mt-96px {
+    margin-top: 96px;
 }
 
 .zariman-image {
