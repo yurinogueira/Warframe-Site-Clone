@@ -22,7 +22,6 @@
     color: white;
 }
 
-
 .red-button {
     background-color: #A40000;
     border: none;
@@ -54,7 +53,7 @@
     position: relative;
     left: 0;
     z-index: 1;
-    margin-top: -512px;
+    margin-top: -576px;
     margin-left: 256px;
     width: 480px;
 }
@@ -62,6 +61,10 @@
     height: 896px;
     width: 100%;
     object-fit: cover;
+}
+
+.about-card {
+    height: 160px;
 }
 
 @media (max-width: 576px) {
