@@ -6,7 +6,6 @@ Projeto criado como parte do conteudo da matéria de Desenvolvimento Web.
 
 - HTML
 - CSS
-- Javascript
 - Bootstrap 5.0
 
 ## Sobre
