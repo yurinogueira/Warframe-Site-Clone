@@ -45,6 +45,9 @@
 .mt-96px {
     margin-top: 96px;
 }
+.mt--576 {
+    margin-top: -576px;
+}
 
 .center-page-image {
     height: 896px;
@@ -53,7 +56,6 @@
     position: relative;
     left: 0;
     z-index: 1;
-    margin-top: -576px;
     margin-left: 256px;
     width: 480px;
 }
@@ -67,12 +69,27 @@
     height: 160px;
 }
 
+.center-page-info {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    color: white;
+}
+.info-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
 @media (max-width: 576px) {
     .center-page-card {
         width: 90%;
     }
     .small-adjustment {
         width: 80%;
+    }
+    .center-page-info {
+        width: 90%;
     }
 }
 

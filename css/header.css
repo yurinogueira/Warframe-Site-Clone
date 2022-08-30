@@ -29,23 +29,3 @@
 .nav-link:hover {
     color: #030303;
 }
-
-.header-red-button {
-    height: 80%;
-    width: 400px;
-}
-.header-white-button {
-    height: 80%;
-    width: 160px;
-}
-
-@media (max-width: 1400px) {
-    .header-red-button {
-        width: 90%;
-        margin-bottom: 8px;
-    }
-    .header-white-button {
-        width: 90%;
-        margin-bottom: 8px;
-    }
-}
