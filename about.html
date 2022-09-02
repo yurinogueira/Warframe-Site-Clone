@@ -13,6 +13,22 @@
 </head>
 <body>
 <header>
+  <div class="offcanvas offcanvas-start"
+       tabindex="-1"
+       id="justAProjectOffCanvas"
+       aria-labelledby="justAProjectOffCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="justAProjectOffCanvasLabel">Projeto de Desenvolvimento Web</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>
+        Site criado por Yuri Nogueira Moreira da Silva como parte da matéria
+        Desenvolvimento Web, logo não é possível realizar cadastro, login ou
+        outras coisas relacionadas.
+      </p>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-xl fixed-top bg-white pb-0">
     <div class="container-fluid">
       <a class="navbar-brand px-4 pb-1" href="index.html">
@@ -83,12 +99,20 @@
           </li>
 
           <li class="nav-item text-center mt-1">
-            <a href="#" class="btn white-button header-white-button mx-3 mb-1 mb-xl-0 px-4">
+            <a class="btn white-button header-white-button mx-3 mb-1 mb-xl-0 px-4"
+               data-bs-toggle="offcanvas"
+               href="#justAProjectOffCanvas"
+               role="button"
+               aria-controls="justAProjectOffCanvas">
               <img class="pb-1" src="images/login-icon.svg" alt="Entrar"> ENTRAR
             </a>
           </li>
           <li class="nav-item text-center mt-1">
-            <a href="#" class="btn red-button header-red-button mb-1 mb-xl-0 px-4">
+            <a class="btn red-button header-red-button mb-1 mb-xl-0 px-4"
+               data-bs-toggle="offcanvas"
+               href="#justAProjectOffCanvas"
+               role="button"
+               aria-controls="justAProjectOffCanvas">
               JOGUE GRATUITAMENTE AGORA MESMO
             </a>
           </li>
@@ -120,6 +144,7 @@
             <li class="list-group-item">Card</li>
             <li class="list-group-item">Dropdowns</li>
             <li class="list-group-item">Carousel</li>
+            <li class="list-group-item">OffCanvas</li>
           </ul>
         </div>
       </div>
