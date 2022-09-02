@@ -12,6 +12,13 @@
 .dropdown-item:active{
     background-color: #790000;
 }
+.dropdown-toggle:active {
+    color: #AC0000;
+}
+.nav-link:focus {
+    color: #AC0000;
+}
+
 
 .navbar {
     border-bottom: 1px solid #bdbdbd;
