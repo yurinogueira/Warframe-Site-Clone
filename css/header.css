@@ -9,6 +9,9 @@
     color: #030303;
     font-weight: bold;
 }
+.dropdown-item:active{
+    background-color: #790000;
+}
 
 .navbar {
     border-bottom: 1px solid #bdbdbd;
