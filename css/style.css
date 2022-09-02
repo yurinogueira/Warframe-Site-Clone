@@ -2,6 +2,10 @@
     font-family: "Noto Sans", sans-serif;
 }
 
+.default-color {
+    color: #C21700;
+}
+
 .white-button {
     background-color: white;
     border: 1px solid;
@@ -45,8 +49,8 @@
 .mt-96px {
     margin-top: 96px;
 }
-.mt--576 {
-    margin-top: -576px;
+.mt--672 {
+    margin-top: -672px;
 }
 
 .center-page-image {
@@ -94,9 +98,6 @@
     text-align: left;
     width: 384px;
 }
-.carousel-caption-adjust h1 {
-    color: #C21700;
-}
 .warframe-carousel-indicators [data-bs-target] {
     width: 14px;
     height: 14px;
@@ -115,11 +116,34 @@
     width: 160px;
     position: relative;
     z-index: 1;
-    height: 32px;
 }
 .warframe-line {
     height: 8px;
     background: #C21700;
+}
+
+.warframe-name {
+    border-bottom: 32px solid #C21700;
+    border-right: 32px solid transparent;
+    height: 32px;
+    margin-top: -32px;
+    width: 70%;
+}
+.warframe-name h5 {
+    line-height: 32px;
+    color: white;
+}
+
+.warframe-prime-name {
+    border-bottom: 32px solid #201e12;
+    border-right: 32px solid transparent;
+    height: 32px;
+    margin-top: -32px;
+}
+.warframe-prime-name h5 {
+    line-height: 32px;
+    color: #ecc051;
+    white-space: nowrap;
 }
 
 @media (max-width: 576px) {
