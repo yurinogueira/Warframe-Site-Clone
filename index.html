@@ -14,22 +14,140 @@
   </head>
   <body>
     <header>
-      <div class="offcanvas offcanvas-start"
+      <div class="offcanvas offcanvas-bottom login-canvas"
            tabindex="-1"
-           id="justAProjectOffCanvas"
-           aria-labelledby="justAProjectOffCanvasLabel">
+           id="registerOffcanvas"
+           aria-labelledby="registerOffcanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="justAProjectOffCanvasLabel">Projeto de Desenvolvimento Web</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="container-fluid">
+            <div class="row float-start">
+              <div class="col m-auto">
+                <button type="button"
+                        class="btn-close text-reset bg-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                </button>
+              </div>
+              <div class="col m-auto">
+                <h3 class="text-white m-auto">Fechar</h3>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="offcanvas-body">
-          <p>
-            Site criado por Yuri Nogueira Moreira da Silva como parte da matéria
-            Desenvolvimento Web, logo não é possível realizar cadastro, login ou
-            outras coisas relacionadas.
-          </p>
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col w-25 m-auto">
+                <img src="images/warframe-logo-simple.webp"
+                     alt="Logo do Warframe"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mt-5 m-auto login-canvas-form">
+                <div class="text-center m-auto my-5" style="width: 90%">
+                  <h4 class="text-white m-auto my-2">CADASTRO</h4>
+                  <form class="login-canvas-form-form m-auto">
+                    <input type="email"
+                           class="form-control login-canvas-inputs m-auto"
+                           id="emailRegisterInput"
+                           placeholder="Endereço de E-mail">
+                    <input type="text"
+                           class="form-control login-canvas-inputs mt-3 m-auto"
+                           id="nameRegister"
+                           placeholder="Nome">
+                    <input type="password"
+                           class="form-control login-canvas-inputs mt-3 m-auto"
+                           id="passwordRegister"
+                           placeholder="Senha">
+                    <input type="password"
+                           class="form-control login-canvas-inputs mt-3 m-auto"
+                           id="passwordConfirmRegister"
+                           placeholder="Repita a Senha">
+                    <a type="button"
+                       data-bs-dismiss="offcanvas"
+                       aria-label="Close"
+                       class="btn red-button my-4 w-100 m-auto">
+                      CADASTRO
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="offcanvas offcanvas-top login-canvas"
+           tabindex="-1"
+           id="loginOffcanvas"
+           aria-labelledby="loginOffcanvasLabel">
+        <div class="offcanvas-header">
+          <div class="container-fluid">
+            <div class="row float-start">
+              <div class="col m-auto">
+                <button type="button"
+                        class="btn-close text-reset bg-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                </button>
+              </div>
+              <div class="col m-auto">
+                <h3 class="text-white m-auto">Fechar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col w-25 m-auto">
+                <img src="images/warframe-logo-simple.webp"
+                     alt="Logo do Warframe"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mt-5 m-auto login-canvas-form">
+                <div class="text-center m-auto my-5" style="width: 90%">
+                  <h4 class="text-white m-auto my-2">ENTRAR COM</h4>
+                  <form class="login-canvas-form-form m-auto">
+                    <input type="email"
+                           class="form-control login-canvas-inputs m-auto"
+                           id="emailInput"
+                           placeholder="Endereço de E-mail">
+                    <input type="password"
+                           class="form-control login-canvas-inputs mt-3 m-auto"
+                           id="password"
+                           placeholder="Senha">
+                    <a type="button"
+                       data-bs-dismiss="offcanvas"
+                       aria-label="Close"
+                       class="btn red-button my-4 w-100 m-auto">
+                      ENTRAR
+                    </a>
+                  </form>
+                  <h4 class="text-white m-auto">OU</h4>
+                  <form class="login-canvas-form-form my-4 m-auto">
+                    <a type="button"
+                       onclick="openRegisterAndCloseLogin()"
+                       data-bs-dismiss="offcanvas"
+                       aria-label="Close"
+                       class="btn red-button w-100 m-auto">
+                      CADASTRAR-SE
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <nav class="navbar navbar-expand-xl fixed-top bg-white pb-0">
         <div class="container-fluid">
           <a class="navbar-brand px-4 pb-1" href="#">
@@ -99,18 +217,18 @@
               <li class="nav-item text-center mt-1">
                 <a class="btn white-button header-white-button mx-3 mb-1 mb-xl-0 px-4"
                    data-bs-toggle="offcanvas"
-                   href="#justAProjectOffCanvas"
+                   href="#loginOffcanvas"
                    role="button"
-                   aria-controls="justAProjectOffCanvas">
+                   aria-controls="loginOffcanvas">
                   <img class="pb-1" src="images/login-icon.svg" alt="Entrar"> ENTRAR
                 </a>
               </li>
               <li class="nav-item text-center mt-1">
                 <a class="btn red-button header-red-button mb-1 mb-xl-0 px-4"
                    data-bs-toggle="offcanvas"
-                   href="#justAProjectOffCanvas"
+                   href="#registerOffcanvas"
                    role="button"
-                   aria-controls="justAProjectOffCanvas">
+                   aria-controls="loginOffcanvas">
                   JOGUE GRATUITAMENTE AGORA MESMO
                 </a>
               </li>
@@ -142,9 +260,9 @@
               <a type="button"
                  class="btn transparent-button my-4 mx-2 w-100 h-50"
                  data-bs-toggle="offcanvas"
-                 href="#justAProjectOffCanvas"
+                 href="#loginOffcanvas"
                  role="button"
-                 aria-controls="justAProjectOffCanvas">
+                 aria-controls="loginOffcanvas">
                 SAIBA MAIS
               </a>
             </div>
@@ -363,4 +481,4 @@
       </div>
     </footer>
   </body>
-</html>
+</html>'

@@ -15,3 +15,9 @@ function openToast(
     let toast = bootstrap.Toast.getOrCreateInstance(toastElement);
     toast.show();
 }
+
+function openRegisterAndCloseLogin() {
+    let loginOffCanvasElement = document.getElementById("registerOffcanvas");
+    let loginOffCanvas = new bootstrap.Offcanvas(loginOffCanvasElement);
+    loginOffCanvas.show();
+}

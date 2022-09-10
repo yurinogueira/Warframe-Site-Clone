@@ -146,6 +146,33 @@
     white-space: nowrap;
 }
 
+.login-canvas {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.login-canvas-form {
+    background-color: black;
+}
+.login-canvas-form-form {
+    width: 50%;
+}
+.login-canvas-inputs {
+    border-radius: 0;
+    border-top: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    background-color: black;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.login-canvas-inputs::placeholder {
+    font-size: 12px;
+    color: gray;
+}
+.login-canvas-inputs:focus {
+    background-color: black;
+}
+
 @media (max-width: 576px) {
     .carousel-caption-adjust {
         width: 256px;
@@ -159,11 +186,17 @@
     .center-page-info {
         width: 90%;
     }
+    .login-canvas-form-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1399px) {
     .center-page-card {
         margin-left: auto;
         margin-right: auto;
+    }
+    .login-canvas-form-form {
+        width: 60%;
     }
 }
